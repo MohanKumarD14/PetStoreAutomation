@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-PetSuite" class="navigator-link">
-              <span class="suite-name border-failed">PetSuite</span>
+              <span class="suite-name border-passed">PetSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-PetSuite" class="hide-methods failed suite-PetSuite"> (hide)</a> <!-- hide-methods failed suite-PetSuite -->
-                      <a href="#" panel-name="suite-PetSuite" class="show-methods failed suite-PetSuite"> (show)</a> <!-- show-methods failed suite-PetSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-PetSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PetSuite" title="api.testcase.UserTests2" class="method navigator-link" hash-for-method="testDeleteUserByName">testDeleteUserByName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-PetSuite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +101,11 @@
                       <a href="#" panel-name="suite-PetSuite" class="show-methods passed suite-PetSuite"> (show)</a> <!-- show-methods passed suite-PetSuite -->
                     </span>
                     <div class="method-list-content passed suite-PetSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PetSuite" title="api.testcase.UserTests2" class="method navigator-link" hash-for-method="testDeleteUserByName">testDeleteUserByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-PetSuite" title="api.testcase.UserTests2" class="method navigator-link" hash-for-method="testGetUserByName">testGetUserByName</a> <!-- method navigator-link -->
@@ -142,9 +133,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-PetSuite" class="panel PetSuite">
-          <div class="suite-PetSuite-class-failed">
+          <div class="suite-PetSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">api.testcase.UserTests2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -153,21 +144,8 @@
                   <a name="testDeleteUserByName">
                   </a> <!-- testDeleteUserByName -->
                   <span class="method-name">testDeleteUserByName</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
-	at api.testcase.UserTests2.testDeleteUserByName(UserTests2.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PetSuite-class-failed -->
-          <div class="suite-PetSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">api.testcase.UserTests2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="testGetUserByName">
@@ -250,24 +228,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testPostUser')
 data.setCell(0, 2, 'api.testcase.UserTests2')
-data.setCell(0, 3, 3075);
+data.setCell(0, 3, 5636);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testUpdateUserByName')
 data.setCell(1, 2, 'api.testcase.UserTests2')
-data.setCell(1, 3, 2724);
+data.setCell(1, 3, 2879);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testGetUserByName')
 data.setCell(2, 2, 'api.testcase.UserTests2')
-data.setCell(2, 3, 1406);
+data.setCell(2, 3, 1479);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testDeleteUserByName')
 data.setCell(3, 2, 'api.testcase.UserTests2')
-data.setCell(3, 3, 1331);
+data.setCell(3, 3, 1411);
 window.suiteTableData['PetSuite']= { tableData: data, tableDiv: 'times-div-PetSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-PetSuite">
               </div> <!-- times-div-PetSuite -->
             </div> <!-- times-div -->
@@ -300,21 +278,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testPostUser</span>
-                <span class="method-start">252 ms</span>
+                <span class="method-start">473 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetUserByName</span>
-                <span class="method-start">3341 ms</span>
+                <span class="method-start">6179 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUpdateUserByName</span>
-                <span class="method-start">4750 ms</span>
+                <span class="method-start">7665 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testDeleteUserByName</span>
-                <span class="method-start">7476 ms</span>
+                <span class="method-start">10551 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
